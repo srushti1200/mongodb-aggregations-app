@@ -1,6 +1,6 @@
 const { MongoClient } =  require("mongodb");
 require('dotenv').config();
-const url = 'mongodb+srv://Srushti12:srushti@cluster0.ssaw0zv.mongodb.net/AggregationDB';
+const url = process.env.MONGOURL;
 const database = 'AggregationDB';
 const collection = 'orders';
 
